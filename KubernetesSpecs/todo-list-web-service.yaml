@@ -14,7 +14,8 @@ spec:
     - name: "8099"
       port: 8099
       targetPort: 80
+  type: LoadBalancer
   selector:
-    io.kompose.service: todo-list-web
+    app: todo-list-web
 status:
   loadBalancer: {}
